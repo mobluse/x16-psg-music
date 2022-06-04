@@ -5,7 +5,7 @@ Music programs for Commander X16 using it's PSG in Vera.
 https://github.com/commanderx16/x16-docs/blob/master/VERA%20Programmer%27s%20Reference.md#programmable-sound-generator-psg
 
 ## Example: Frere Gustav
-The example Frere Gustav is modified from Sinclair ZX Spectrum BASIC Programming by Steven Vickers:
+The example Frere Gustav is modified from *Sinclair ZX Spectrum BASIC Programming* by Steven Vickers:
 https://worldofspectrum.org/ZXBasicManual/zxmanchap19.html. It's played with minor coords.
 
 Command line to run using x16emu:  
