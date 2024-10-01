@@ -1,4 +1,4 @@
-' TRACKER INSPIRED BY LINUS AKESSON'S FOR C64 EDITOR IN BASIC&MC.
+' TRACKER INSPIRED BY LINUS ÅKESSON'S (LFTKRYO) FOR C64 EDITOR IN BASIC&MC.
 ' CODE IS PURE QBASIC 1.1. ONE CAN BREAK EARLY USING CTRL+SCRLK.
 ' THIS CAN BE RUN ON QBJS.ORG IF YOU REPLACE SCREEN & PLAY.
 DECLARE SUB PLAY2 (s AS STRING)
@@ -10,11 +10,11 @@ show
 n0Z = ASC("@")
 DO
 FOR iZ = 8 TO 79
-nZ = SCREEN(6, iZ): cZ = SCREEN(3, iZ)
+nZ = SCREEN(7, iZ): cZ = SCREEN(4, iZ)
 nS = CHR$(nZ): cS = CHR$(cZ)
-LOCATE 3, iZ: COLOR 15: PRINT cS;
+LOCATE 4, iZ: COLOR 15: PRINT cS;
 IF "A" <= nS AND nS <= "Z" THEN PLAY "N" + STR$(nZ - n0Z) ELSE PLAY "N0"
-LOCATE 3, iZ: COLOR 7: PRINT cS;
+LOCATE 4, iZ: COLOR 7: PRINT cS;
 NEXT
 LOOP
 
@@ -27,11 +27,13 @@ FUNCTION SCREEN2% (r AS INTEGER, c AS INTEGER)
 END FUNCTION
 
 SUB show
-COLOR 7: CLS : PRINT "QTRAKR": PRINT : ' ONLY ONE CHANNEL
-PRINT "       +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---"
-PRINT "       :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :"
-PRINT "       :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :"
-PRINT "       AEFH:AEFH AEFH E:A E:C EECA AE H:HF EFH E A C  A    :   :   :   :QSU:ZX"
-PRINT "         B D   G I K   N P   S U W   Z"
-PRINT "        A C E F H J L M O Q R T V X Y"
+COLOR 7: CLS : LOCATE 2, 8: PRINT "QTRAKR": PRINT ' ONLY ONE CHANNEL WORKS.
+DIM tS AS STRING: tS = "       "
+PRINT tS; "+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---"
+PRINT tS; ":   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :"
+PRINT tS; ":   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :"
+PRINT tS; "AEFH:AEFH AEFH E:A E:C EECA AE H:HF EFH E A C  A    :   :   :   :QSU:ZX"
+PRINT
+PRINT tS; "  B D   G I K   N P   S U W   Z"
+PRINT tS; " A C E F H J L M O Q R T V X Y"
 END SUB
