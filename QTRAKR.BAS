@@ -1,6 +1,6 @@
 ' TRACKER INSPIRED BY LINUS ÅKESSON'S (LFTKRYO) FOR C64 EDITOR IN BASIC&MC.
 ' CODE IS PURE QBASIC 1.1. ONE CAN BREAK EARLY USING CTRL+SCRLK.
-' THIS CAN BE RUN ON https://boxgaming.github.io/qbjs/.
+' THIS CAN BE RUN ON https://qbjs.org/.
 DECLARE SUB show ()
 DIM nS AS STRING, cS AS STRING
 DIM n0Z AS INTEGER, iZ AS INTEGER, nZ AS INTEGER, cZ AS INTEGER
@@ -22,7 +22,7 @@ DIM tS AS STRING: tS = "       "
 PRINT tS; "+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---"
 PRINT tS; ":   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :"
 PRINT tS; ":   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :"
-PRINT tS; "AEFH:AEFH AEFH E:A E:C EECA AE H:HF EFH E A C  A    :   :   :   :QSU:ZX"
+PRINT tS; "AEFH:AEFH AEFH E:A E:C EECA AE H:HF EFH E A C  A:   :   :   :   :QSU:ZX"
 PRINT
 PRINT tS; "  B D   G I K   N P   S U W   Z"
 PRINT tS; " A C E F H J L M O Q R T V X Y"
