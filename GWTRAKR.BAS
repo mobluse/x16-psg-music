@@ -11,7 +11,7 @@
 92 REM +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---
 93 REM :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :
 94 REM :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :   :
-95 REM AEFH:AEFH AEFH E:A E:C EECA AE H:HF EFH E A C  A    :   :   :   :QSU:ZX
+95 REM AEFH:AEFH AEFH E:A E:C EECA AE H:HF EFH E A C  A:   :   :   :   :QSU:ZX
 96 REM
 97 REM   B D   G I K   N P   S U W   Z
 98 REM  A C E F H J L M O Q R T V X Y
